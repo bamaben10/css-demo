@@ -1,0 +1,97 @@
+
+/* CSS Reset - Goot to have with each project */
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.blue-box {
+    background-color: lightskyblue;
+    /* border: 50px solid black; */
+}
+
+.red-box {
+    background-color: rgb(236, 101, 101);
+}
+
+.green-box {
+    background-color: #90ee90;
+}
+
+.orange-box {
+    background-color: lightsalmon;
+}
+
+div {
+    height: 10vh;
+    width: 10vw;
+}
+
+.div-container {
+    /* flex-wrap: wrap; */
+    /* flex-direction: column-reverse; */
+    /* gap: 10px; */
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+    /* these need to be together */
+    /* display: flex; */
+    /*flex-direction:  column;
+    justify-content: right;
+    align-items: flex-start;
+    align-content: center; */
+}
+
+/* the following screen width applies of the max is below 600px */
+@media only screen and (max-width: 599px) {
+    .blue-box {
+        background-color: rgb(6, 47, 73);
+        /* border: 50px solid black; */
+    }
+    
+    .red-box {
+        background-color: rgb(192, 8, 8);
+    }
+    
+    .green-box {
+        background-color: #095009;
+    }
+    
+    .orange-box {
+        background-color: rgb(251, 138, 94);
+    }
+
+    div {
+        height: 20px;
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1050px) {
+    div {
+        font-size: 50px;
+    }
+    .div-container {
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+    }
+}
+
+.slide-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: green;
+}
+
+.slide-away {
+    top: -1500px;
+}
